@@ -14,6 +14,27 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
+  gridContainer{
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+  }
+
+  .container{
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
   .container{
     position: relative;
     max-width: 1200px;
@@ -27,16 +48,17 @@
   .container .overlayImg{
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 330px;
     z-index: 1;
     transform: translateZ(20px);
     margin-top: 30px;
+
   }
 
   .container .backImg{
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 330px;
     z-index: -1;
     transform-style: preserve-3d;
 }
