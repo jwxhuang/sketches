@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tilt</title>
+    <link rel="stylesheet" href="style.css" />
+    <href> </href>
 </head>
 <body>
-    
+
+    <div class="gridContainer">
+        <div class="container">
+            <div class="overlayImg" transform: translateZ(20px) >
+                <img src="/Assets/mercuryThumb2.png" width ="600px" >
+            </div>
+            <div class="backImg"  >
+                <img src="/Assets/mercuryThumb1.png" width ="600px" >
+            </div>
+        </div>
+    </div>
 
 
-<a href="mercuryIndex.html"> Mercury Shift </a>
-<br>
-<a href="https://jwxhuang.github.io/sketches/GreekStatueTiltCode/index.html">Greek Statue </a>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 
+    <script src="tilt.jquery.js" type="text/javascript"></script>
 
+    <script type="text/javascript">
 
+        $(document).ready(function(){
+            $('.overlayImg').tilt({
+                maxTilt:30,
+                glare:false,
+                maxGlare: .4,
+                Perspective: 1000,
+                reset: true,
+                scale: 1,
+
+            })
+        })
+    </script>
 </body>
 </html>
